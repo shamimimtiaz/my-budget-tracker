@@ -6,7 +6,7 @@ My-Budget-Tracker is a PWA (progressive web application) that allow users for of
 ## Table of Contents
 
 * [User Story](#User-Story)
-* [Installation](#Installation)
+* [Installation](#installation)
 * [Technologies used to create app](#technologies-used)
 * [Screenshots](#screenshots)
 * [Questions](#questions)
@@ -21,7 +21,7 @@ Offline entries will be added to the tracker when the application is brought bac
 
 It is a mobile-first application which gives users access to install the app in their mobile/desktop devices.
 
-##Installation
+## Installation
 
 The installation required npm dependencies, "run npm install".
 Users have to make sure they are on the right port localhost:3000. There is an option to chage the port in server.js file.
@@ -44,11 +44,11 @@ Backend technologies
 * Express.js
 * Heroku (Deployment )
 
-##Screenshots
+## Screenshots
 
 <img width="626" alt="Screenshots" src="https://user-images.githubusercontent.com/75001492/115087987-46ef9700-9edd-11eb-9a1b-8840625df181.PNG">
 
 
-##Questions
+## Questions
 
 If you have questions, email me at km_si@ymail.com or reach out on <a href="https://github.com/shamimimtiaz" target="_blank">Shamim's Github</a>
