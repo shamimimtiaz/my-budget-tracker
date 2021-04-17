@@ -5,9 +5,10 @@ const CACHE_NAME = APP_PREFIX + VERSION;
 const DATA_CACHE_NAME = "data-cache-v1";
 
 const FILES_TO_CACHE = [
-    "/", 
+    "/",
+    "/js/idb.js", 
     "/index.html", 
-    "/index.js", 
+    "/js/index.js", 
     "/icons/favicon.ico", 
     "/css/styles.css", 
     "/icons/icon-128x128.png",
@@ -70,6 +71,22 @@ self.addEventListener("fetch", function (evt) {
 
     return;
   }
+
+//   evt.respondWith(
+//     caches.match(evt.request).then(function (request) {
+//         if (request) {
+//           console.log('responding with cache : ' + evt.request.url)
+//           return request
+//         } else {
+//             console.log('file is not cached, fetching : ' + evt.request.url)
+//             return fetch(evt.request)
+//         }
+//         // You can omit if/else for console.log & put one line below like this too.
+//         // return request || fetch(e.request)
+//       })
+// )
+
+
 
   evt.respondWith(
     fetch(evt.request).catch(function () {
